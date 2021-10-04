@@ -104,19 +104,6 @@ mysql> select * from personDetails ;
 +-----------+----------+---------------+--------+--------------+--------+-------------+----------------------+
 2 rows in set (0.00 sec)
 
-mysql> update personDetails
-    -> set address='deshpande nagar',city='auragabad' where fristname="shivani";
-Query OK, 1 row affected (0.01 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
-
-mysql> select * from personDetails;
-+-----------+----------+-----------------+-----------+--------------+--------+-------------+----------------------+
-| fristname | lastname | address         | city      | state        | zip    | phonenumber | email                |
-+-----------+----------+-----------------+-----------+--------------+--------+-------------+----------------------+
-| shivani   | pawar    | deshpande nagar | auragabad | maharastrata | 431501 | 9553639241  | shivani@123gmail.com |
-| apu       | yadav    | pthan get       | jalan     | maharastra   | 432501 | 8337364678  | apu@1234gamil.com    |
-+-----------+----------+-----------------+-----------+--------------+--------+-------------+----------------------+
-2 rows in set (0.01 sec)
 
 mysql>
 
@@ -248,5 +235,20 @@ mysql> select fristname from personDetails order by fristname;
 6 rows in set (0.00 sec)
 
 mysql>
+
+
+mysql> update personDetails
+    -> set address='deshpande nagar',city='auragabad' where fristname="shivani";
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from personDetails;
++-----------+----------+-----------------+-----------+--------------+--------+-------------+----------------------+
+| fristname | lastname | address         | city      | state        | zip    | phonenumber | email                |
++-----------+----------+-----------------+-----------+--------------+--------+-------------+----------------------+
+| shivani   | pawar    | deshpande nagar | auragabad | maharastrata | 431501 | 9553639241  | shivani@123gmail.com |
+| apu       | yadav    | pthan get       | jalan     | maharastra   | 432501 | 8337364678  | apu@1234gamil.com    |
++-----------+----------+-----------------+-----------+--------------+--------+-------------+----------------------+
+2 rows in set (0.01 sec)
 
 
