@@ -149,3 +149,35 @@ mysql> select * from personDetails;
 mysql>
 
 
+
+
+mysql> insert into personDetails(fristname,lastname,address,city,state,zip,phonenumber,email)values("abhi","bendlkar","aadrsh coloni","partur","maharastra","431501","8329184982","abhijeet@142gamil.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from personDetails
+    -> ;
++-----------+----------+-----------------+-----------+--------------+--------+-------------+-----------------------+
+| fristname | lastname | address         | city      | state        | zip    | phonenumber | email                 |
++-----------+----------+-----------------+-----------+--------------+--------+-------------+-----------------------+
+| shivani   | pawar    | deshpande nagar | auragabad | maharastrata | 431501 | 9553639241  | shivani@123gmail.com  |
+| apu       | yadav    | pthan get       | jalana    | maharastra   | 431501 | 9564738383  | apu@123gamil.com      |
+| sid       | maslekar | ushmanpura      | jalgav    | maharastra   | 431504 | 888843433   | sid@123gmail.com      |
+| abhi      | bendlkar | aadrsh coloni   | partur    | maharastra   | 431501 | 8329184982  | abhijeet@142gamil.com |
+| abhi      | bendlkar | aadrsh coloni   | partur    | maharastra   | 431501 | 8329184982  | abhijeet@142gamil.com |
++-----------+----------+-----------------+-----------+--------------+--------+-------------+-----------------------+
+5 rows in set (0.00 sec)
+
+mysql> select count(*) personDetails where city="jalgav";
+ERROR 1054 (42S22): Unknown column 'city' in 'where clause'
+mysql>
+
+mysql> select count(*) from personDetails where city = "jalana";
++----------+
+| count(*) |
++----------+
+|        1 |
++----------+
+1 row in set (0.00 sec)
+
+mysql>
+
