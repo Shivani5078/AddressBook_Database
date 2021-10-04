@@ -122,6 +122,30 @@ mysql>
 
 
 
+mysql> select * from personDetails;
++-----------+----------+-----------------+-----------+--------------+--------+-------------+----------------------+
+| fristname | lastname | address         | city      | state        | zip    | phonenumber | email                |
++-----------+----------+-----------------+-----------+--------------+--------+-------------+----------------------+
+| shivani   | pawar    | deshpande nagar | auragabad | maharastrata | 431501 | 9553639241  | shivani@123gmail.com |
+| apu       | yadav    | pthan get       | jalan     | maharastra   | 432501 | 8337364678  | apu@1234gamil.com    |
++-----------+----------+-----------------+-----------+--------------+--------+-------------+----------------------+
+2 rows in set (0.01 sec)
 
+mysql> delete from personDetails
+    -> where firstname="apu";
+ERROR 1054 (42S22): Unknown column 'firstname' in 'where clause'
+mysql> delete from personDetails
+    -> where fristname="apu";
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from personDetails;
++-----------+----------+-----------------+-----------+--------------+--------+-------------+----------------------+
+| fristname | lastname | address         | city      | state        | zip    | phonenumber | email                |
++-----------+----------+-----------------+-----------+--------------+--------+-------------+----------------------+
+| shivani   | pawar    | deshpande nagar | auragabad | maharastrata | 431501 | 9553639241  | shivani@123gmail.com |
++-----------+----------+-----------------+-----------+--------------+--------+-------------+----------------------+
+1 row in set (0.00 sec)
+
+mysql>
 
 
