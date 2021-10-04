@@ -26,3 +26,44 @@ mysql> show databases;
 | world              |
 +--------------------+
 7 rows in set (0.04 sec)
+
+
+
+mysql> use addressbook;
+Database changed
+mysql> create table personDetails(
+    -> fristname varchar(50) not null,
+    -> lastname varchar(60) not null,
+    -> address varchar(150) not null,
+    -> city varchar(70) not null,
+    -> state varchar (90) not null,
+    -> zip varchar(12) not null,
+    -> phonenumber varchar(120) not null,
+    -> email varchar(140) not null
+    -> );
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> desc personDetails;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| fristname   | varchar(50)  | NO   |     | NULL    |       |
+| lastname    | varchar(60)  | NO   |     | NULL    |       |
+| address     | varchar(150) | NO   |     | NULL    |       |
+| city        | varchar(70)  | NO   |     | NULL    |       |
+| state       | varchar(90)  | NO   |     | NULL    |       |
+| zip         | varchar(12)  | NO   |     | NULL    |       |
+| phonenumber | varchar(120) | NO   |     | NULL    |       |
+| email       | varchar(140) | NO   |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+8 rows in set (0.01 sec)
+
+mysql>
+
+
+
+
+
+
+
+
