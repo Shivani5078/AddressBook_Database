@@ -318,3 +318,23 @@ mysql> select count(*)  from  personDetails where ContactType = "friend";
 |        2 |
 +----------+
 1 row in set (0.00 sec)
+
+
+
+
+mysql> insert into personDetails(fristname,lastname,address,city,state,zip,phonenumber,email,ContactType) value("shivani","pawar","pawar compelx","partur","maharastrata","431501","9553639241","shivani@123gamil.com","friend");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from personDetails;
++-----------+----------+-----------------+-----------+--------------+--------+-------------+-----------------------+-------------+
+| fristname | lastname | address         | city      | state        | zip    | phonenumber | email                 | ContactType |
++-----------+----------+-----------------+-----------+--------------+--------+-------------+-----------------------+-------------+
+| shivani   | pawar    | deshpande nagar | auragabad | maharastrata | 431501 | 9553639241  | shivani@123gmail.com  | friend      |
+| apu       | yadav    | pthan get       | jalana    | maharastra   | 431501 | 9564738383  | apu@123gamil.com      | friend      |
+| sid       | maslekar | ushmanpura      | jalgav    | maharastra   | 431504 | 888843433   | sid@123gmail.com      | family      |
+| abhi      | bendlkar | aadrsh coloni   | partur    | maharastra   | 431501 | 8329184982  | abhijeet@142gamil.com | family      |
+| abhi      | bendlkar | aadrsh coloni   | partur    | maharastra   | 431501 | 8329184982  | abhijeet@142gamil.com | family      |
+| abhi      | bendlkar | aadrsh coloni   | partur    | maharastra   | 431501 | 8329184982  | abhijeet@142gamil.com | family      |
+| shivani   | pawar    | pawar compelx   | partur    | maharastrata | 431501 | 9553639241  | shivani@123gamil.com  | friend      |
++-----------+----------+-----------------+-----------+--------------+--------+-------------+-----------------------+-------------+
+7 rows in set (0.00 sec)
